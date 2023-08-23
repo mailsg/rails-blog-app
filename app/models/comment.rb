@@ -6,6 +6,11 @@ class Comment < ApplicationRecord
   # Attributes
   attribute :text, :text
 
+  # Callback
+  after_save :update_post_comments_counter
+
+  private
+
   # Methods
   def update_post_comments_counter
     post.update(comments_counter: post.comments.count + 1)
