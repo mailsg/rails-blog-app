@@ -25,7 +25,7 @@ RSpec.describe 'users', type: :request do
     end
   end
   describe 'GET /show', type: :request do
-    let!(:user) do 
+    let!(:user) do
       User.create(
         name: 'test user',
         photo: 'https://example.com/photos/0X8086XX09',

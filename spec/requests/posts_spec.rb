@@ -2,14 +2,14 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   describe 'GET /index', type: :request do
-    let!(:user) do 
+    let!(:user) do
       User.create(
         name: 'test user',
         photo: 'https://example.com/photos/0X8086XX09',
         bio: 'test_bio',
         posts_counter: 1
       )
-  end
+    end
 
     before(:example) { get "/users/#{user.id}/posts" }
 
@@ -27,7 +27,7 @@ RSpec.describe 'Posts', type: :request do
   end
 
   describe 'GET /show', type: :request do
-    let!(:user) do 
+    let!(:user) do
       User.create(
         name: 'test user',
         photo: 'https://example.com/photos/0X8086XX09',
@@ -36,7 +36,7 @@ RSpec.describe 'Posts', type: :request do
       )
     end
 
-    let!(:post) do 
+    let!(:post) do
       Post.create(
         author: user,
         title: 'Hello',

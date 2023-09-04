@@ -4,7 +4,7 @@ RSpec.describe 'user show view page', type: :system do
   let!(:user1) do
     User.create(
       name: 'test user1',
-      photo: 'https://images3.alphacoders.com/690/690494.jpg',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkfBY9UTdiEHSYCSo7iuM4k1Eyv-u9YwGqQ&usqp=CAU',
       bio: 'test_bio1',
       posts_counter: 1
     )

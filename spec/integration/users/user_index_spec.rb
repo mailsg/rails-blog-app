@@ -4,7 +4,7 @@ RSpec.describe 'user index view page', type: :system do
   let!(:user1) do
     User.create(
       name: 'test user1',
-      photo: 'https://images3.alphacoders.com/690/690494.jpg',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkfBY9UTdiEHSYCSo7iuM4k1Eyv-u9YwGqQ&usqp=CAU',
       bio: 'test_bio1',
       posts_counter: 1
     )
@@ -13,7 +13,7 @@ RSpec.describe 'user index view page', type: :system do
   let!(:user2) do
     User.create(
       name: 'test user2',
-      photo: 'https://images.pexels.com/photos/2913125/pexels-photo-2913125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      photo: 'https://lumiere-a.akamaihd.net/v1/images/ct_cinderella_upcportalreskin_20694_f7c876a1.jpeg?region=0,0,330,330',
       bio: 'test_bio2',
       posts_counter: 2
     )
@@ -22,7 +22,7 @@ RSpec.describe 'user index view page', type: :system do
   let!(:user3) do
     User.create(
       name: 'test user3',
-      photo: 'https://static.photocdn.pt/images/articles/2018/12/05/articles/2017_8/beginner_photography_mistakes-1.webp',
+      photo: 'https://www.rd.com/wp-content/uploads/2020/11/RD-mickey-mouse-GettyImages-1137134597-JVcrop.jpg',
       bio: 'test_bio3',
       posts_counter: 0
     )
@@ -40,9 +40,9 @@ RSpec.describe 'user index view page', type: :system do
     end
 
     it ' can see profile picture' do
-      expect(page).to have_selector('img#user-image[src="https://images3.alphacoders.com/690/690494.jpg"]')
-      expect(page).to have_selector('img#user-image[src="https://images.pexels.com/photos/2913125/pexels-photo-2913125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]')
-      expect(page).to have_selector('img#user-image[src="https://static.photocdn.pt/images/articles/2018/12/05/articles/2017_8/beginner_photography_mistakes-1.webp"]')
+      expect(page).to have_selector('img#user-image[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkfBY9UTdiEHSYCSo7iuM4k1Eyv-u9YwGqQ&usqp=CAU"]')
+      expect(page).to have_selector('img#user-image[src="https://lumiere-a.akamaihd.net/v1/images/ct_cinderella_upcportalreskin_20694_f7c876a1.jpeg?region=0,0,330,330"]')
+      expect(page).to have_selector('img#user-image[src="https://www.rd.com/wp-content/uploads/2020/11/RD-mickey-mouse-GettyImages-1137134597-JVcrop.jpg"]')
     end
 
     it 'can see posts count' do
