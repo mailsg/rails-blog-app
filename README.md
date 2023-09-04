@@ -120,6 +120,11 @@ To run tests, run the following command:
 - GitHub: [@mailsg](https://github.com/mailsg)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sandeep0912/)
 
+👤 **Alijan Rahimi**
+
+- GitHub: [@rahimialijan](https://github.com/rahimialijan)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/alijan-rahimi-18389ab3/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
