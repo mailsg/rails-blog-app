@@ -1,23 +1,7 @@
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class ="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, autofocus:true , autocomplete: "name"%>
-  </div>
-
-  <div class ="field">
-    <%= f.label :bio %><br>
-    <%= f.text_field :bio, autofocus:true , autocomplete: "name"%>
-  </div>
-
-  <div class ="field">
-    <%= f.label :photo %><br>
-    <%= f.text_field :photo, autofocus:true , autocomplete: "name", pattern: "https?://.+",placeholder: "Enter the URL" %>
-    <p class="hint">Please enter a valid URL starting with 'http://' or 'https://'</p>
-  </div>
+  <%= render "users/shared/error_messages", resource: resource %>
 
   <div class="field">
     <%= f.label :email %><br />
